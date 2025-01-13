@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { WaitlistForm } from "@/components/WaitlistForm";
-import { ContactForm } from "@/components/ContactForm";
 
 const Index = () => {
   return (
@@ -21,9 +20,8 @@ const Index = () => {
       </header>
       <main>
         <Hero />
-        <WaitlistForm />
         <Features />
-        <ContactForm />
+        <WaitlistForm />
       </main>
     </div>
   );
