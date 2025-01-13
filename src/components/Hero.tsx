@@ -8,7 +8,7 @@ export const Hero = () => {
 
   return (
     <div className="relative min-h-[80vh] flex items-center justify-center px-4 py-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-secondary/50 to-background/50 -z-10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-background/50 -z-10" />
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
           Journal with your <span className="text-gradient">mood</span> in mind
@@ -18,7 +18,7 @@ export const Hero = () => {
         </p>
         <Button
           size="lg"
-          className="text-lg px-8 py-6"
+          className="text-lg px-8 py-6 bg-green-600 hover:bg-green-700"
           onClick={scrollToWaitlist}
         >
           Join Waitlist <ArrowRight className="ml-2" />
