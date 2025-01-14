@@ -1,4 +1,21 @@
-import { Mail, Instagram, Linkedin, Twitter, TiktokIcon } from "lucide-react";
+import { Mail, Instagram, Linkedin, Twitter } from "lucide-react";
+
+const TikTokIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-6 w-6"
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 export const Footer = () => {
   return (
@@ -13,7 +30,7 @@ export const Footer = () => {
         
         <div className="flex flex-wrap gap-6 mb-12">
           <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
-            <TiktokIcon className="h-6 w-6" />
+            <TikTokIcon />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <Twitter className="h-6 w-6" />
