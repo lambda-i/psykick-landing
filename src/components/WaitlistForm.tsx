@@ -23,7 +23,7 @@ export const WaitlistForm = () => {
   };
 
   return (
-    <div id="waitlist" className="py-20 px-4 bg-green-50">
+    <div id="waitlist" className="py-20 px-4 bg-[#FBF6E9]/30">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
           Be the First to Experience Psykick
@@ -40,7 +40,7 @@ export const WaitlistForm = () => {
             className="flex-1"
             required
           />
-          <Button type="submit" className="whitespace-nowrap bg-green-600 hover:bg-green-700 text-white">
+          <Button type="submit" className="whitespace-nowrap bg-[#5DB996] hover:bg-[#5DB996]/90 text-white">
             Join Waitlist
           </Button>
         </form>
