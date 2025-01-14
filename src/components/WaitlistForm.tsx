@@ -23,12 +23,12 @@ export const WaitlistForm = () => {
   };
 
   return (
-    <div id="waitlist" className="py-20 px-4 gradient-bg">
+    <div id="waitlist" className="py-20 px-4 bg-green-50">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
           Be the First to Experience Psykick
         </h2>
-        <p className="text-white/90 mb-8">
+        <p className="text-gray-600 mb-8">
           Join our waitlist to get early access and exclusive updates about our launch.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -37,10 +37,10 @@ export const WaitlistForm = () => {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 bg-white/90 border-0"
+            className="flex-1"
             required
           />
-          <Button type="submit" variant="secondary" className="whitespace-nowrap">
+          <Button type="submit" className="whitespace-nowrap bg-green-600 hover:bg-green-700 text-white">
             Join Waitlist
           </Button>
         </form>

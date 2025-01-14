@@ -19,7 +19,7 @@ const TikTokIcon = () => (
 
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-b from-green-50 to-green-100 py-16 px-4">
+    <footer className="footer-gradient py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-4">Psykick</h2>

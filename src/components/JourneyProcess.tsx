@@ -1,11 +1,11 @@
 export const JourneyProcess = () => {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-white overflow-x-hidden">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16">Your Journaling Journey</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
           {/* Phone 1 */}
-          <div className="text-center">
+          <div className="text-center flex-1">
             <div className="relative max-w-[250px] mx-auto mb-6">
               <div className="relative border-8 border-black rounded-[3rem] overflow-hidden aspect-[9/19] shadow-xl">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-black rounded-b-2xl"></div>
@@ -24,7 +24,7 @@ export const JourneyProcess = () => {
           </div>
 
           {/* Phone 2 */}
-          <div className="text-center">
+          <div className="text-center flex-1">
             <div className="relative max-w-[250px] mx-auto mb-6">
               <div className="relative border-8 border-black rounded-[3rem] overflow-hidden aspect-[9/19] shadow-xl">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-black rounded-b-2xl"></div>
@@ -43,7 +43,7 @@ export const JourneyProcess = () => {
           </div>
 
           {/* Phone 3 */}
-          <div className="text-center">
+          <div className="text-center flex-1">
             <div className="relative max-w-[250px] mx-auto mb-6">
               <div className="relative border-8 border-black rounded-[3rem] overflow-hidden aspect-[9/19] shadow-xl">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-black rounded-b-2xl"></div>
