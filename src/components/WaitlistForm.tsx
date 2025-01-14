@@ -11,7 +11,6 @@ export const WaitlistForm = () => {
     e.preventDefault();
     if (!email) return;
     
-    // Here you would typically send this to your backend
     console.log("Submitted email:", email);
     
     toast({
@@ -23,12 +22,12 @@ export const WaitlistForm = () => {
   };
 
   return (
-    <div id="waitlist" className="py-20 px-4 bg-[#FBF6E9]/30">
+    <div id="waitlist" className="py-32 px-4 bg-gradient-to-b from-[#FBF6E9]/50 to-[#D3F1DF]/30">
       <div className="max-w-2xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
           Be the First to Experience Psykick
         </h2>
-        <p className="text-gray-600 mb-8">
+        <p className="text-gray-600 text-xl mb-12">
           Join our waitlist to get early access and exclusive updates about our launch.
         </p>
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -37,10 +36,13 @@ export const WaitlistForm = () => {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="flex-1"
+            className="flex-1 h-12 text-lg"
             required
           />
-          <Button type="submit" className="whitespace-nowrap bg-[#5DB996] hover:bg-[#5DB996]/90 text-white">
+          <Button 
+            type="submit" 
+            className="h-12 px-8 text-lg font-medium bg-[#5DB996] hover:bg-[#5DB996]/90 text-white"
+          >
             Join Waitlist
           </Button>
         </form>

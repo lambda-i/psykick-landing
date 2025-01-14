@@ -52,3 +52,21 @@
 .text-gradient {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-[#5DB996] to-[#D3F1DF];
 }
+
+.journey-card {
+  @apply relative p-8 rounded-3xl bg-white shadow-lg transition-all duration-300 hover:shadow-xl overflow-hidden;
+}
+
+.journey-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #5DB996, #D3F1DF);
+}
+
+.section-gradient {
+  background: linear-gradient(180deg, #FBF6E9 0%, rgba(211,241,223,0.3) 100%);
+}
