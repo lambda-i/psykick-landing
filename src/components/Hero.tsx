@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Countdown } from "./Countdown";
 
 export const Hero = () => {
   const scrollToWaitlist = () => {
@@ -7,10 +8,10 @@ export const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-[80vh] flex items-center justify-center px-4 py-20">
+    <div className="relative min-h-[90vh] flex items-center justify-center px-4 py-32">
       <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-background/50 -z-10" />
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 mt-16">
           Journal with your <span className="text-gradient">mood</span> in mind
         </h1>
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -25,7 +26,7 @@ export const Hero = () => {
         </Button>
 
         {/* Phone Display */}
-        <div className="relative max-w-[300px] mx-auto">
+        <div className="relative max-w-[300px] mx-auto mb-12">
           <div className="relative border-8 border-black rounded-[3rem] overflow-hidden aspect-[9/19] shadow-2xl">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-black rounded-b-2xl"></div>
             <div className="h-full bg-white p-4">
@@ -43,6 +44,9 @@ export const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* Countdown */}
+        <Countdown targetDate="2024-03-07" />
       </div>
     </div>
   );
