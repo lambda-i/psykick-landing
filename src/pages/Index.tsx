@@ -4,6 +4,7 @@ import { Features } from "@/components/Features";
 import { WaitlistForm } from "@/components/WaitlistForm";
 import { Footer } from "@/components/Footer";
 import { JourneyProcess } from "@/components/JourneyProcess";
+import { FAQ } from "@/components/FAQ";
 
 const Index = () => {
   return (
@@ -24,6 +25,7 @@ const Index = () => {
         <Hero />
         <JourneyProcess />
         <WaitlistForm />
+        <FAQ />
       </main>
       <Footer />
     </div>

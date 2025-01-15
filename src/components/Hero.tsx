@@ -45,8 +45,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Countdown */}
-        <Countdown targetDate="2024-03-07" />
+        <Countdown />
       </div>
     </div>
   );

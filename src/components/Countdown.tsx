@@ -7,7 +7,8 @@ interface TimeLeft {
   seconds: number;
 }
 
-export const Countdown = ({ targetDate }: { targetDate: string }) => {
+export const Countdown = () => {
+  const targetDate = "2025-03-07";
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
@@ -28,11 +29,11 @@ export const Countdown = ({ targetDate }: { targetDate: string }) => {
     calculateTimeLeft();
 
     return () => clearInterval(timer);
-  }, [targetDate]);
+  }, []);
 
   return (
     <div className="text-center mb-20">
-      <h3 className="text-2xl font-semibold mb-4">Launching In:</h3>
+      <h3 className="text-2xl font-semibold mb-4">Launching On March 7, 2025</h3>
       <div className="flex justify-center gap-4 text-xl">
         <div className="bg-white p-4 rounded-lg shadow-md">
           <span className="font-bold text-3xl text-green-600">{timeLeft.days}</span>
