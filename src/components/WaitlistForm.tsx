@@ -84,7 +84,7 @@ export const WaitlistForm = () => {
               {/* Image Section - 40% width on desktop */}
               <div className="w-full md:w-[40%] h-[300px] md:h-auto bg-[#D3F1DF]">
                 <img 
-                  src="/lovable-uploads/3961f331-389c-46ec-bb7c-6ecddc097fc6.png"
+                  src="/lovable-uploads/d407f6aa-b29e-4d72-a518-1445d5fe43d1.png"
                   alt="Product Preview"
                   className="w-full h-full object-cover"
                 />
@@ -156,7 +156,7 @@ export const WaitlistForm = () => {
             
             <div className="w-full md:w-[40%] h-[300px] md:h-auto bg-[#D3F1DF]">
               <img 
-                src="/lovable-uploads/3961f331-389c-46ec-bb7c-6ecddc097fc6.png"
+                src="/lovable-uploads/d407f6aa-b29e-4d72-a518-1445d5fe43d1.png"
                 alt="Product Preview"
                 className="w-full h-full object-cover"
               />
