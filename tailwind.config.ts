@@ -19,19 +19,24 @@ export default {
 		},
 		extend: {
 			colors: {
+				primary: 'var(--primary)', // Maps the primary variable
+				secondary: 'var(--secondary)',
+				neutral: 'var(--neutral)',
+				lightGray: 'var(--light-gray)',
+				gray: 'var(--gray)',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
-				},
-				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
-				},
+				// primary: {
+				// 	DEFAULT: 'hsl(var(--primary))',
+				// 	foreground: 'hsl(var(--primary-foreground))'
+				// },
+				// secondary: {
+				// 	DEFAULT: 'hsl(var(--secondary))',
+				// 	foreground: 'hsl(var(--secondary-foreground))'
+				// },
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
 					foreground: 'hsl(var(--destructive-foreground))'
@@ -69,6 +74,22 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
+				typing: {
+					"0%": {
+					  width: "0",
+					},
+					"100%": {
+					  width: "100%"
+					}  
+				  },
+				  blink: {
+					"50%": {
+					  borderColor: "transparent"
+					},
+					"100%": {
+					  borderColor: "white"
+					}
+				},
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -87,8 +108,9 @@ export default {
 				}
 			},
 			animation: {
+				typing: "typing 1.2s steps(30) infinite alternate, blink 0.8s",
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
 			}
 		}
 	},

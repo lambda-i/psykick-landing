@@ -29,19 +29,19 @@ export const Footer = () => {
         </div>
         
         <div className="flex flex-wrap gap-6 mb-12">
-          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
+          <a href="https://www.tiktok.com/@psykickyou/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <TikTokIcon />
           </a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <Twitter className="h-6 w-6" />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
+          <a href="https://www.instagram.com/_psy.kick_/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <Instagram className="h-6 w-6" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
+          <a href="https://www.linkedin.com/company/psykick-lambda/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <Linkedin className="h-6 w-6" />
           </a>
-          <a href="mailto:contact@psykick.com" className="hover:text-green-600 transition-colors">
+          <a href="psykick.hello@gmail.com" className="hover:text-green-600 transition-colors">
             <Mail className="h-6 w-6" />
           </a>
         </div>

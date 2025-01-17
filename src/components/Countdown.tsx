@@ -33,23 +33,23 @@ export const Countdown = () => {
 
   return (
     <div className="text-center mb-20">
-      <h3 className="text-2xl font-semibold mb-4">Launching On March 7, 2025</h3>
+      <h3 className="text-2xl font-semibold mb-4">Coming in March 2025</h3>
       <div className="flex justify-center gap-4 text-xl">
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <span className="font-bold text-3xl text-green-600">{timeLeft.days}</span>
-          <p className="text-sm text-gray-600">Days</p>
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <span className="font-bold text-4xl text-green-600">{timeLeft.days}</span>
+          <p className="text-lg text-gray-600">Days</p>
         </div>
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <span className="font-bold text-3xl text-green-600">{timeLeft.hours}</span>
-          <p className="text-sm text-gray-600">Hours</p>
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <span className="font-bold text-4xl text-green-600">{timeLeft.hours}</span>
+          <p className="text-lg text-gray-600">Hours</p>
         </div>
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <span className="font-bold text-3xl text-green-600">{timeLeft.minutes}</span>
-          <p className="text-sm text-gray-600">Minutes</p>
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <span className="font-bold text-4xl text-green-600">{timeLeft.minutes}</span>
+          <p className="text-lg text-gray-600">Minutes</p>
         </div>
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <span className="font-bold text-3xl text-green-600">{timeLeft.seconds}</span>
-          <p className="text-sm text-gray-600">Seconds</p>
+        <div className="bg-white p-6 rounded-lg shadow-lg">
+          <span className="font-bold text-4xl text-green-600">{timeLeft.seconds}</span>
+          <p className="text-lg text-gray-600">Seconds</p>
         </div>
       </div>
     </div>
