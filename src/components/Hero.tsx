@@ -32,27 +32,29 @@ export const Hero = () => {
     <div className="relative min-h-[90vh] flex items-center justify-center px-4 py-32">
       <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-background/50 -z-10" />
       <div className="max-w-4xl mx-auto text-center">
-      <h1 className="text-6xl md:text-7xl font-bold mb-6 mt-16">
+      <h1 className="text-5xl md:text-7xl font-bold mb-6 mt-16">
           Your Sidekick
           <br/>
           whenever you are feeling
            <br/>
           <span
-            className={`animate-typing inline-block whitespace-nowrap overflow-hidden border-r-4 border-slate-100 font-bold pb-4 ${currentEmotion.textColor}`}
+            className={`animate-typing inline-block whitespace-nowrap overflow-hidden border-r-4 border-slate-100 font-bold p-2 ${currentEmotion.textColor}`}
           >
             {currentEmotion.text}
           </span>
         </h1>
         <p className="text-l md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-24">
-          No more holding it in. Set your feelings free through journaling. Take your first step toward emotional freedom.
+          No more holding it in. 
+          <br/>
+          Set your feelings free through journaling.
         </p>
-        <Button
+        {/* <Button
           size="lg"
           className="text-lg px-8 py-6 text-white hover:bg-green-700 mb-16 bg-[#5DB996]" 
           onClick={scrollToWaitlist}
         >
           Join Waitlist <ArrowRight className="ml-2" />
-        </Button>
+        </Button> */}
 
         {/* Phone Display */}
         <div className="relative max-w-[300px] mx-auto mb-12">
@@ -75,6 +77,13 @@ export const Hero = () => {
         </div>
 
         <Countdown />
+        <Button
+          size="lg"
+          className="text-lg px-8 py-6 text-white hover:bg-green-700 mb-16 bg-[#5DB996]" 
+          onClick={scrollToWaitlist}
+        >
+          Join Waitlist <ArrowRight className="ml-2" />
+        </Button>
       </div>
     </div>
   );

@@ -9,33 +9,75 @@ export const WaitlistForm = () => {
   const [formState, setFormState] = useState("idle"); // "idle", "form", "success"
   const [showForm, setShowForm] = useState(false);
   const [formData, setFormData] = useState({
-    name: "",
+    address_name: "",
     email: "",
     reason: "",
-    source: ""
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.email || !formData.name) return;
-    
-    console.log("Submitted:", formData);
-    
-    toast({
-      title: "Thanks for joining!",
-      description: "We'll keep you updated on our launch.",
-    });
-    
-    setFormData({
-      name: "",
-      email: "",
-      reason: "",
-      source: ""
-    });
-    setShowForm(false);
-    setFormState("success");
+
+    // Validate input fields
+    if (!formData.email || !formData.address_name) {
+      toast({
+        title: "Error",
+        description: "Name and Email are required!",
+      });
+      return;
+    }
+
+  // HubSpot Form API details
+  const portalId = "49019591";
+  const formId = "27f114b2-5225-426b-9dbd-71ce04b641b3";
+  const apiUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`;
+
+  // Prepare payload for submission
+  const payload = {
+    fields: [
+      { name: "email", value: formData.email },
+      { name: "address_name", value: formData.address_name },
+      { name: "reason", value: formData.reason }
+    ],
   };
+
+  try {
+    // Send data to HubSpot
+    const response = await fetch(apiUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (response.ok) {
+      toast({
+        title: "Thanks for joining!",
+        description: "We'll keep you updated on our launch.",
+      });
+      setFormData({
+        address_name: "",
+        email: "",
+        reason: "",
+      });
+      setShowForm(false);
+      setFormState("success");
+    } else {
+      console.error("Failed to submit:", response.statusText);
+      toast({
+        title: "Submission Failed",
+        description: "Please try again later.",
+      });
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    toast({
+      title: "Error",
+      description: "An error occurred while submitting the form.",
+    });
+  }
+};
 
   if (formState === "success") {
     return (
@@ -139,8 +181,8 @@ export const WaitlistForm = () => {
                     <Input
                       type="text"
                       placeholder="How do we address you?"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      value={formData.address_name}
+                      onChange={(e) => setFormData({ ...formData, address_name: e.target.value })}
                       className="h-12 text-base bg-white/100 backdrop-blur-sm border-gray-200"
                       required
                     />

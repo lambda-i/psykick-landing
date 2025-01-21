@@ -79,7 +79,7 @@ export default {
 					  width: "0",
 					},
 					"100%": {
-					  width: "40%"
+					  width: "50%"
 					}
 				  },
 				  blink: {
