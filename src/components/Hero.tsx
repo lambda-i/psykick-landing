@@ -9,11 +9,11 @@ export const Hero = () => {
   };
 
   const emotions = [
-    { text: "angry", gradient: "bg-gradient-to-r from-red-500 to-red-700" },
-    { text: "sad", gradient: "bg-gradient-to-r from-blue-500 to-blue-700" },
-    { text: "scared", gradient: "bg-gradient-to-r from-purple-500 to-purple-700" },
-    { text: "happy", gradient: "bg-gradient-to-r from-yellow-400 to-yellow-600" },
-    { text: "unsure", gradient: "bg-gradient-to-r from-orange-400 to-orange-600" },
+    { text: "angry", gradient: "bg-gradient-to-r from-red-500 to-red-700", textColor: "text-red-500" },
+    { text: "sad", gradient: "bg-gradient-to-r from-blue-500 to-blue-700", textColor: "text-blue-500" },
+    { text: "scared", gradient: "bg-gradient-to-r from-purple-500 to-purple-700", textColor: "text-purple-500" },
+    { text: "happy", gradient: "bg-gradient-to-r from-yellow-400 to-yellow-600", textColor: "text-yellow-400" },
+    { text: "unsure", gradient: "bg-gradient-to-r from-orange-400 to-orange-600", textColor: "text-orange-400" },
   ];
   
   const [currentEmotionIndex, setCurrentEmotionIndex] = useState(0);
@@ -21,7 +21,7 @@ export const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentEmotionIndex((prevIndex) => (prevIndex + 1) % emotions.length);
-    }, 2400); // Switch emotion every 4 seconds
+    }, 1570); // Switch emotion every 4 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, []);
@@ -33,17 +33,17 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-background/50 -z-10" />
       <div className="max-w-4xl mx-auto text-center">
       <h1 className="text-6xl md:text-7xl font-bold mb-6 mt-16">
-          Your sidekick
+          Your Sidekick
           <br/>
-           when you are feeling
-          <br/>
-          <p
-            className={`animate-typing inline-block whitespace-nowrap overflow-hidden border-r-4 border-r-white pr-5 text-white font-bold ${currentEmotion.gradient}`}
+          whenever you are feeling
+           <br/>
+          <span
+            className={`animate-typing inline-block whitespace-nowrap overflow-hidden border-r-4 border-slate-100 font-bold pb-4 ${currentEmotion.textColor}`}
           >
             {currentEmotion.text}
-          </p>
+          </span>
         </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+        <p className="text-l md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-24">
           No more holding it in. Set your feelings free through journaling. Take your first step toward emotional freedom.
         </p>
         <Button

@@ -1,4 +1,4 @@
-import { Mail, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Mail, Instagram, Linkedin } from "lucide-react";
 
 const TikTokIcon = () => (
   <svg
@@ -24,7 +24,7 @@ export const Footer = () => {
         <div className="mb-12">
           <h2 className="text-2xl font-bold mb-4">Psykick</h2>
           <p className="text-gray-600 max-w-2xl">
-            We are a Singapore company passionate about self-awareness. We created this platform to help people maintain journaling consistency and develop a deeper understanding of themselves through innovative, mood-based journaling techniques.
+            We are a team of passionate individuals from Singapore dedicated to self-awareness and introspection. We created this platform to help people maintain journaling consistency and develop a deeper understanding of themselves through innovative, mood-based journaling techniques.
           </p>
         </div>
         
@@ -32,22 +32,19 @@ export const Footer = () => {
           <a href="https://www.tiktok.com/@psykickyou/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <TikTokIcon />
           </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
-            <Twitter className="h-6 w-6" />
-          </a>
           <a href="https://www.instagram.com/_psy.kick_/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <Instagram className="h-6 w-6" />
           </a>
           <a href="https://www.linkedin.com/company/psykick-lambda/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <Linkedin className="h-6 w-6" />
           </a>
-          <a href="psykick.hello@gmail.com" className="hover:text-green-600 transition-colors">
+          <a href="mailto:psykick.hello@gmail.com" className="hover:text-green-600 transition-colors">
             <Mail className="h-6 w-6" />
           </a>
         </div>
 
         <div className="border-t border-green-200 pt-8 flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-sm text-gray-600 mb-4 sm:mb-0">© 2024 Psykick. All rights reserved.</p>
+          <p className="text-sm text-gray-600 mb-4 sm:mb-0">© 2025 Psykick. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="/privacy" className="text-sm text-gray-600 hover:text-green-600 transition-colors">Privacy Policy</a>
             <a href="/terms" className="text-sm text-gray-600 hover:text-green-600 transition-colors">Terms of Service</a>
