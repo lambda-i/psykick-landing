@@ -38,7 +38,7 @@ export const Hero = () => {
           whenever you are feeling
            <br/>
           <span
-            className={`animate-typing inline-block whitespace-nowrap overflow-hidden border-r-4 border-slate-100 font-bold p-2 ${currentEmotion.textColor}`}
+            className={`animate-typing inline-block whitespace-nowrap overflow-hidden border-r-4 border-slate-100 font-bold pb-2 ${currentEmotion.textColor}`}
           >
             {currentEmotion.text}
           </span>
