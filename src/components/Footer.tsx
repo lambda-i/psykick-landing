@@ -32,7 +32,7 @@ export const Footer = () => {
           <a href="https://www.tiktok.com/@psykickyou/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <TikTokIcon />
           </a>
-          <a href="https://www.instagram.com/_psy.kick_/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
+          <a href="https://www.instagram.com/psykick.app/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
             <Instagram className="h-6 w-6" />
           </a>
           <a href="https://www.linkedin.com/company/psykick-lambda/" target="_blank" rel="noopener noreferrer" className="hover:text-green-600 transition-colors">
