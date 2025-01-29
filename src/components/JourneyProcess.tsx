@@ -11,7 +11,7 @@ export const JourneyProcess = () => {
                 <div className="relative border-8 border-black rounded-[3rem] overflow-hidden aspect-[9/19] shadow-xl">
                   {/* Camera Screen */}
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-black rounded-b-2xl"></div>
-                  <img src="public/Landing main.png" alt="Camera Screen" className="w-full h-full" />
+                  <img src="public/lovable-uploads/Landing main.png" alt="Camera Screen" className="w-full h-full" />
                 </div>
               </div>
             </div>
@@ -29,7 +29,7 @@ export const JourneyProcess = () => {
                 <div className="relative border-8 border-black rounded-[3rem] overflow-hidden aspect-[9/19] shadow-xl">
                   {/* Camera Screen */}
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-black rounded-b-2xl"></div>
-                  <img src="public/MoodJournalEntry.png" alt="Camera Screen" className="w-full h-full" />
+                  <img src="public/lovable-uploads/MoodJournalEntry.png" alt="Camera Screen" className="w-full h-full" />
                 </div>
               </div>
             </div>
@@ -46,7 +46,7 @@ export const JourneyProcess = () => {
                 <div className="relative border-8 border-black rounded-[3rem] overflow-hidden aspect-[9/19] shadow-xl">
                   {/* Camera Screen */}
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-black rounded-b-2xl"></div>
-                  <img src="public/Insights Page.png" alt="Camera Screen" className="w-full h-full" />
+                  <img src="public/lovable-uploads/Insights Page.png" alt="Camera Screen" className="w-full h-full" />
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ export const JourneyProcess = () => {
                 <div className="relative border-8 border-black rounded-[3rem] overflow-hidden aspect-[9/19] shadow-xl">
                   {/* Camera Screen */}
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-black rounded-b-2xl"></div>
-                  <img src="public/History.png" alt="Camera Screen" className="w-full h-full" />
+                  <img src="public/lovable-uploads/History.png" alt="Camera Screen" className="w-full h-full" />
                 </div>
               </div>
             </div>

@@ -64,7 +64,7 @@ export const Hero = () => {
             <div className="h-full bg-white p-4 relative">
               {/* Image inside the phone */}
               <img 
-                src="public/Landing Main.png" 
+                src="public/lovable-uploads/Landing main.png" 
                 alt="Phone Screen Content"
                 className="absolute inset-0 w-full h-full object-cover"
               />
