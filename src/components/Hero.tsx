@@ -59,19 +59,16 @@ export const Hero = () => {
         {/* Phone Display */}
         <div className="relative max-w-[300px] mx-auto mb-12">
           <div className="relative border-8 border-black rounded-[3rem] overflow-hidden aspect-[9/19] shadow-2xl">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-7 bg-black rounded-b-2xl"></div>
-            <div className="h-full bg-white p-4">
-              <div className="h-6 w-32 bg-green-100 rounded-full mb-4"></div>
-              <div className="space-y-3">
-                <div className="h-24 bg-green-50 rounded-lg p-3">
-                  <div className="h-4 w-3/4 bg-green-200 rounded mb-2"></div>
-                  <div className="h-12 w-full bg-white rounded border border-green-200"></div>
-                </div>
-                <div className="h-24 bg-green-50 rounded-lg p-3">
-                  <div className="h-4 w-1/2 bg-green-200 rounded mb-2"></div>
-                  <div className="h-12 w-full bg-white rounded border border-green-200"></div>
-                </div>
-              </div>
+            
+            {/* Phone Screen */}
+            <div className="h-full bg-white p-4 relative">
+              {/* Image inside the phone */}
+              <img 
+                src="public/Landing Main.png" 
+                alt="Phone Screen Content"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+
             </div>
           </div>
         </div>

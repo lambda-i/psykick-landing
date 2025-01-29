@@ -153,9 +153,9 @@ export const WaitlistForm = () => {
               {/* Image Section */}
               <div className="w-full h-auto flex items-center justify-center md:mt-0 w-[100%] md:w-[40%] lg:w-[40%] sm: mb-4">
                 <img
-                  src="/lovable-uploads/d407f6aa-b29e-4d72-a518-1445d5fe43d1.png"
+                  src="/lovable-uploads/Psykick Collage Bento.png"
                   alt="Product Preview"
-                  className="w-[90%] max-h-[400px] md:max-h-none object-cover rounded-xl shadow-2xl"
+                  className="w-[90%] max-h-[800px] md:max-h-none object-cover rounded-xl shadow-2xl"
                 />
               </div>
             </div>
