@@ -8,7 +8,7 @@ interface TimeLeft {
 }
 
 export const Countdown = () => {
-  const targetDate = "2025-03-07";
+  const targetDate = "2025-03-14";
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
