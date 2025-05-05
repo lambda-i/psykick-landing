@@ -64,7 +64,7 @@ export const Hero = () => {
             <div className="h-full bg-white p-4 relative">
               {/* Image inside the phone */}
               <img 
-                src="/lovable-uploads/Landing main.png" 
+                src="/lovable-uploads/App Store.png" 
                 alt="Phone Screen Content"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -74,13 +74,19 @@ export const Hero = () => {
         </div>
 
         <Countdown />
-        <Button
-          size="lg"
-          className="text-lg px-8 py-6 text-white hover:bg-green-700 mb-16 bg-[#5DB996]" 
-          onClick={scrollToWaitlist}
+        <a
+          href="https://apps.apple.com/se/app/psykick-mood-journal/id6743097918?l=en-GB"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 mb-16"
         >
-          Join Waitlist <ArrowRight className="ml-2" />
-        </Button>
+          <Button
+              size="lg"
+              className="text-lg px-8 py-6 text-white hover:bg-green-700 bg-[#5DB996]" 
+            >
+              Download Now <ArrowRight className="ml-2" />
+          </Button>
+        </a>
       </div>
     </div>
   );

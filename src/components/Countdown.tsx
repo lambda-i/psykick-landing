@@ -33,9 +33,10 @@ export const Countdown = () => {
 
   return (
     <div className="text-center mb-10">
-      <h3 className="text-4xl text-gradient font-semibold">Available in Early March 2025 </h3>
+      <h3 className="text-4xl text-gradient font-semibold">Psykick is out on the AppStore in all regions! </h3>
       <h2 className="text-sm mb-4 mt-4">It’s free so why not give Psykick your Sidekick a shot!</h2>
-
+      
+      {/**
       <div className="flex justify-center items-center gap-2 text-lg text-center">
         <div className="bg-white p-3 rounded-lg shadow-lg w-1/5 flex flex-col items-center">
           <span className="font-bold text-4xl text-green-600">{timeLeft.days}</span>
@@ -54,6 +55,7 @@ export const Countdown = () => {
           <p className="text-sm md:text-md font-semibold text-gray-600">Seconds</p>
         </div>
       </div>
+       */}
     </div>
   );
 };

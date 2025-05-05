@@ -142,12 +142,18 @@ export const WaitlistForm = () => {
                   </div>
                 </div>
 
-                <Button
-                  onClick={() => setShowForm(true)}
-                  className="w-full md:w-full px-8 py-4 text-lg bg-primary hover:bg-neutral text-neutral hover:text-primary font-semibold rounded-xl"
+                <a
+                  href="https://apps.apple.com/se/app/psykick-mood-journal/id6743097918?l=en-GB"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-6 mb-16"
                 >
-                  Join the Waitlist
-                </Button>
+                  <Button
+                    className="w-full md:w-full px-8 py-4 text-lg bg-primary hover:bg-neutral text-neutral hover:text-primary font-semibold rounded-xl mt-3"
+                  >
+                    Download Now
+                  </Button>
+                </a>
               </div>
 
               {/* Image Section */}
