@@ -1,0 +1,57 @@
+{
+  "positions": [
+    {
+      "title": "Therapist / Counselor – Head of Research & Clinical Development",
+      "location": "Remote / Singapore preferred",
+      "commitment": "Part-time / Co-Founder Level (Equity-Based)",
+      "about": "Psykick is a dual-facing mental health platform designed to bridge the gaps between therapy sessions. We provide clients with an AI-guided journaling experience and are building a dashboard for therapists to track progress, auto-generate notes, and detect emotional red flags.",
+      "mission": "Ensure Psykick remains clinically grounded and evidence-based. Guide features using CBT principles and real-world therapist workflows.",
+      "responsibilities": [
+        "Lead qualitative user research with therapists, clients, and mental health orgs",
+        "Translate psychological theory (esp. CBT) into app features",
+        "Advise on emotional tracking and mental health red flag detection",
+        "Create ethical and clinical guidelines for prompts and summaries",
+        "Validate therapeutic interventions and their outcomes",
+        "Engage with mental health institutions and grant panels"
+      ],
+      "requirements": [
+        "Licensed therapist, counselor, psychologist or researcher",
+        "Familiarity with CBT and client management workflows",
+        "Passionate about digital mental health accessibility",
+        "Experience with early-stage product design",
+        "Comfortable with ambiguity and fast iteration"
+      ],
+      "bonus": [
+        "Experience with public health/nonprofit orgs",
+        "Research background in digital interventions"
+      ]
+    },
+    {
+      "title": "Technical Co-Founder – Full-Stack + LLM Developer",
+      "location": "Remote / Singapore preferred",
+      "commitment": "Part-time to full-time / Co-Founder Level (Equity-Based)",
+      "about": "We’ve launched a journaling app and are building a companion dashboard for therapists. Our goal is to enable structured journaling, session prep, and automated insights using AI—empowering therapists and enhancing mental healthcare delivery.",
+      "mission": "Build the technical foundation of Psykick’s journaling and therapist dashboard platforms, with secure LLM integration and scalable deployment.",
+      "responsibilities": [
+        "Develop and maintain backend services (NestJS or equivalent)",
+        "Create dashboards with React/Angular/Next.js",
+        "Fine-tune and self-host LLMs for summarization and generation tasks",
+        "Optimize infrastructure for performance and security",
+        "Deploy apps to cloud infra like Vercel, AWS or GCP",
+        "Work closely with product and research teams to refine features"
+      ],
+      "requirements": [
+        "Full-stack development experience with JS/TS",
+        "Hands-on experience deploying or fine-tuning LLMs",
+        "Familiarity with HuggingFace, Ollama, vLLM, etc.",
+        "Comfort with prompt engineering and embeddings",
+        "Experience with secure, scalable backend design"
+      ],
+      "bonus": [
+        "Knowledge of open-source LLMs (e.g., LLaMA 3, Mistral)",
+        "Experience in health/wellness or ethical AI projects",
+        "Use of Firebase, Supabase, or serverless infra"
+      ]
+    }
+  ]
+}
